@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity MonthlyRevenue.
+    -->
+    <changeSet id="20231129111658-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="clause_id"
+                                 baseTableName="monthly_revenue"
+                                 constraintName="fk_monthly_revenue__clause_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="clause"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="jeha_id"
+                                 baseTableName="monthly_revenue"
+                                 constraintName="fk_monthly_revenue__jeha_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jeha"
+                                 />
+    </changeSet>
+</databaseChangeLog>

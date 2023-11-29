@@ -11,7 +11,21 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111058_added_entity_Attachment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111158_added_entity_Sector.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111258_added_entity_Center.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111358_added_entity_Jeha.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111458_added_entity_Clause.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111558_added_entity_MonthlyPayment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111658_added_entity_MonthlyRevenue.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111758_added_entity_MonthlyPaymentsDetail.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20231129111158_added_entity_constraints_Sector.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111258_added_entity_constraints_Center.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111358_added_entity_constraints_Jeha.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111558_added_entity_constraints_MonthlyPayment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111658_added_entity_constraints_MonthlyRevenue.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231129111758_added_entity_constraints_MonthlyPaymentsDetail.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
