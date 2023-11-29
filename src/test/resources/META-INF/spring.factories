@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory = ly.gov.eidc.\
+    opendata.config.SqlTestContainersSpringContextCustomizerFactory
